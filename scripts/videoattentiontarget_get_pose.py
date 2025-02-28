@@ -6,7 +6,7 @@ from pathlib import Path
 import cv2
 import pandas as pd
 import tqdm
-from retinaface.pre_trained_models import get_model
+#from retinaface.pre_trained_models import get_model
 
 from mediapipe import solutions
 from mediapipe.framework.formats import landmark_pb2
