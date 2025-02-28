@@ -55,10 +55,7 @@ if __name__ == "__main__":
         min_pose_presence_confidence=0.5)
     detector = vision.PoseLandmarker.create_from_options(options)
 
-
-
-
-    detector.eval()
+    #detector.eval()
 
     paths = list(df.groups.keys())
 
