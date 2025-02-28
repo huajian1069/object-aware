@@ -63,9 +63,9 @@ if __name__ == "__main__":
     for path in tqdm.tqdm(paths):
         folder = Path(os.path.dirname(path).split("/")[-1])
 
-        img = cv2.imread(os.path.join(args.dataset_dir, "images", path))
+        #img = cv2.imread(os.path.join(args.dataset_dir, "images", path))
 
-        image = Image.open(os.path.join("../sharingan/data/videoatttarget", frame['path'][0])).convert("RGB")
+        image = Image.open(os.path.join(args.dataset_dir, "images", path)).convert("RGB")
         image_np = np.array(image)
         detection_result = detector.detect(mp.Image(image_format=mp.ImageFormat.SRGB, data=image_np))
 
