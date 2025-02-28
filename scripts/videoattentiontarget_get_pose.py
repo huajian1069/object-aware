@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     labels_path = f"{args.subset}_release.csv"
 
-    column_names = ["path", "bbox_x_min", "bbox_y_min", "bbox_x_max", "bbox_y_max", "gaze_x", "gaze_y", "fname", "id", "inout",
+    column_names = ["id", "path", "bbox_x_min", "bbox_y_min", "bbox_x_max", "bbox_y_max", "gaze_x", "gaze_y", "fname", "id", "inout",
                     "show-clip", "split", "image_size", "norm_bbox_x_min", "norm_bbox_x_max", "norm_bbox_y_min", "norm_bbox_y_max", "norm_gaze_x", "norm_gaze_y"]
     df = pd.read_csv(
         os.path.join(args.dataset_dir, labels_path),
