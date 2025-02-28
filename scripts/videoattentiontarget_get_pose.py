@@ -18,7 +18,7 @@ import mediapipe as mp
 import cv2
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
-
+from PIL import Image
 
 random.seed(1)
 
