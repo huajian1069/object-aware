@@ -26,7 +26,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset_dir", help="Root directory of dataset")
     parser.add_argument(
-        "--subset", help="Subset of dataset to process", choices=["train", "test"], required=True
+        "--subset", help="Subset of dataset to process", choices=["train", "test", "val"], required=True
     )
     args = parser.parse_args()
 
