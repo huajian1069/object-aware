@@ -40,6 +40,7 @@ if __name__ == "__main__":
         names=column_names,
         usecols=column_names,
         index_col=False,
+        skiprows=1,
     )
     df = df.groupby("path")
 
